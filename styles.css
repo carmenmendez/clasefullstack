@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(66, 95, 95);
+    color: blanchedalmond;
+}
+
+ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+ul .navbar {
+    font-size: medium;
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    text-decoration: none;
+}
