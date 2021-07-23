@@ -25,6 +25,19 @@ img {
     height: 400px;
 }
 
+.div1 { grid-area: div1; }
+.div2 { grid-area: div2; }
+.div3 { grid-area: div3; }
+.div4 { grid-area: div4; }
+.div5 { grid-area: div5; }
+.div6 { grid-area: div6; }
+.div7 { grid-area: div7; }
+.div8 { grid-area: div8; }
+.div9 { grid-area: div9; }
+.div10 { grid-area: div10; }
+.div11 { grid-area: div11; }
+.di2v1 { grid-area: div12; }
+
 @media screen and (max-width: 937px) {
     .container {
         width: 100%;
