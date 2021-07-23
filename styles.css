@@ -1,77 +1,52 @@
 * {
-    padding: 0;
     margin: 0;
-    border: 0;
-}
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(46, 51, 50);
-    color: rgb(245, 250, 249);
-}
-header {
-    height: 50px;
-    border-bottom: solid 1px #484e4c;
+    padding: 0;
     box-sizing: border-box;
 }
-main {
+
+.container {
+    width: 100%;
     display: grid;
-    grid-template-columns: 50px 200px 1fr;
-    grid-template-rows: 50px 1fr;
-    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "div1 . . ."
+    ". div6 . div8"
+    ". . div11 .";
 }
-aside ul {
-    background-color: rgb(31, 33, 33);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    padding-top: 10px;
-    padding-bottom: 1000px;
-    padding-left: 5px;
-    border-right: solid 1px #484e4c;
+
+img {
+    width: 100%;
+    height: 100%;
 }
-.icon {
-    height: 40px;
-    width: 40px;
-    border-radius: 15px;
+
+.div {
+    width: 300px;
+    height: 400px;
 }
-img.icon .icon-add {
-    margin-bottom: 20px;
-    border-radius: 20px;
-    background-color: rgb(46, 51, 50);
-    color: rgb(245, 250, 249);
+
+@media screen and (max-width: 937px) {
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "div1 . ."
+        ". div6 div8"
+        ". . div11 ";
+    }    
 }
-.channel-header {
-    background-color: rgb(31, 33, 33);
-    padding-top: 15px;
-    padding-left: 10px;
-    border-right: solid 1px #484e4c;
-    border-bottom: solid 1px #484e4c;
-}
-.channel-list {
-    background-color: rgb(31, 33, 33);
-    grid-column: 2/3;
-    grid-row: 2/3;
-    padding-left: 10px;
-    border-right: solid 1px #484e4c;
-}
-.chat-name {
-    padding-top: 15px;
-    padding-left: 10px;
-    border-bottom: solid 1px #484e4c;
-}
-.chat-container {
-    grid-column: 3/4;
-    padding-top: 15px;
-    padding-left: 10px;
-}
-.chat-message .photo-perfil {
-    height: 40px;
-    width: 40px;
-    border-radius: 8px;
-    margin-right: 10px;
-}
-div.chat-message {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    padding-top: 15px;
+
+@media screen and (max-width: 624px) {
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "div1 ."
+        ". div6"
+        "div8 div11";
+    }    
 }
