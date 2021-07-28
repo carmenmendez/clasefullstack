@@ -1,0 +1,6 @@
+{
+    "name": "clase-fullstack",
+    "scripts": {
+        "dev": "sass --watch styles/main.scss styles.css"
+    }
+}
